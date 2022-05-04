@@ -42,6 +42,9 @@ describe('Clicking "Poppa stacken!"', () => {
 		await pop.click();
 		let alert = await driver.switchTo().alert();
 		await alert.accept();
+
+		let peek = await driver.findElement(By.id('peek')); 
+		await peek.click();
 	}); 
 }); 
 
